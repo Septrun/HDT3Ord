@@ -53,27 +53,27 @@ public class Main {
 
         switch (choice) {
             case 1:
-                SortingAlgorithms.gnomeSort(data);
+                AlgoritmosSort.gnomeSort(data);
                 break;
 
             case 2:
-                SortingAlgorithms.mergeSort(data);
+                AlgoritmosSort.mergeSort(data);
                 break;
 
             case 3:
-                SortingAlgorithms.quickSort(data, 0, data.length - 1);
+                AlgoritmosSort.quickSort(data, 0, data.length - 1);
                 break;
 
             case 4:
                 int[] primitive = FileHandler.toPrimitive(data);
-                SortingAlgorithms.radixSort(primitive);
+                AlgoritmosSort.radixSort(primitive);
                 for (int i = 0; i < primitive.length; i++) {
                     data[i] = primitive[i];
                 }
                 break;
 
             case 5:
-                SortingAlgorithms.shellSort(data);
+                AlgoritmosSort.shellSort(data);
                 break;
 
             default:
